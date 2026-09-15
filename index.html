@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta
+    name="description"
+    content="SHO SHO - Delicious homemade matcha and coffee drinks."
+  />
+
+  <title>SHO SHO | Homemade Matcha</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(180deg, #fff7f3 0%, #f8efe7 100%);
+      color: #3d2b1f;
+      min-height: 100vh;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 35px 20px 25px;
+    }
+
+    .logo {
+      width: 140px;
+      max-width: 70vw;
+      height: auto;
+      margin-bottom: 15px;
+    }
+
+    h1 {
+      font-size: 3rem;
+      letter-spacing: 3px;
+      color: #e85b9d;
+      margin-bottom: 8px;
+    }
+
+    .subtitle {
+      font-size: 1.1rem;
+      color: #7a5a48;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 22px;
+      width: 90%;
+      max-width: 900px;
+      margin: 20px auto 45px;
+    }
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: rgba(255, 255, 255, 0.86);
+      border: 1px solid rgba(120, 90, 70, 0.12);
+      border-radius: 22px;
+      padding: 18px;
+      text-align: center;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.07);
+    }
+
+    .product-image {
+      width: 100%;
+      max-width: 230px;
+      height: 230px;
+      object-fit: contain;
+      margin-bottom: 12px;
+      border-radius: 15px;
+    }
+
+    .card h2 {
+      font-size: 1.15rem;
+      color: #5a3c2c;
+      margin-bottom: 8px;
+    }
+
+    .card p {
+      color: #7a5a48;
+      font-size: 0.95rem;
+      margin-bottom: 10px;
+    }
+
+    .price {
+      font-size: 1.25rem;
+      font-weight: bold;
+      color: #2f7a4a;
+      margin-bottom: 16px;
+    }
+
+    .btn {
+      display: inline-block;
+      width: 100%;
+      max-width: 180px;
+      padding: 12px 18px;
+      border-radius: 999px;
+      background: linear-gradient(135deg, #e978ad, #d94f8b);
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 6px 16px rgba(217, 79, 139, 0.25);
+      transition: 0.2s ease;
+    }
+
+    .btn:hover,
+    .btn:focus-visible {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 20px rgba(217, 79, 139, 0.35);
+      outline: 3px solid rgba(217, 79, 139, 0.25);
+      outline-offset: 3px;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 10px 20px 30px;
+      color: #8a6a58;
+      font-size: 0.95rem;
+    }
+
+    .footer a {
+      color: #d94f8b;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2.2rem;
+      }
+
+      .products {
+        grid-template-columns: 1fr;
+        width: 88%;
+      }
+
+      .product-image {
+        max-width: 250px;
+        height: 250px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="hero">
+    <img
+      src="logo.png"
+      alt="SHO SHO Logo"
+      class="logo"
+    />
+
+    <h1>SHO SHO</h1>
+    <p class="subtitle">Delicious Homemade Matcha</p>
+  </header>
+
+  <main>
+    <section class="products" aria-label="SHO SHO Products">
+
+      <!-- SHOSHO'S SECRET -->
+      <article class="card">
+        <img
+          src="secret-matcha.png"
+          alt="SHOSHO'S SECRET Matcha"
+          class="product-image"
+        />
+
+        <h2>SHOSHO'S SECRET</h2>
+        <p>Signature Matcha</p>
+        <div class="price">2.5 BD</div>
+
+        <a
+          class="btn"
+          href="https://ig.me/m/shoshomatcha?text=Hi%2C%20I%20want%20to%20order%20SHOSHO%27S%20SECRET"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Order Now
+        </a>
+      </article>
+
+      <!-- OG MATCHA -->
+      <article class="card">
+        <img
+          src="og-matcha.png"
+          alt="OG Matcha"
+          class="product-image"
+        />
+
+        <h2>OG MATCHA</h2>
+        <p>Classic Matcha Taste</p>
+        <div class="price">1.8 BD</div>
+
+        <a
+          class="btn"
+          href="https://ig.me/m/shoshomatcha?text=Hi%2C%20I%20want%20to%20order%20OG%20MATCHA"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Order Now
+        </a>
+      </article>
+
+      <!-- SHOSHO'S BREW -->
+      <article class="card">
+        <img
+          src="shoshos-brew.png"
+          alt="SHOSHO'S BREW Coffee"
+          class="product-image"
+        />
+
+        <h2>SHOSHO'S BREW</h2>
+        <p>Signature Coffee</p>
+        <div class="price">1.8 BD</div>
+
+        <a
+          class="btn"
+          href="https://ig.me/m/shoshomatcha?text=Hi%2C%20I%20want%20to%20order%20SHOSHO%27S%20BREW"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Order Now
+        </a>
+      </article>
+
+      <!-- ICED AMERICANO -->
+      <article class="card">
+        <img
+          src="iced-americano.png"
+          alt="Iced Americano"
+          class="product-image"
+        />
+
+        <h2>ICED AMERICANO</h2>
+        <p>Refreshing Iced Coffee</p>
+        <div class="price">1 BD</div>
+
+        <a
+          class="btn"
+          href="https://ig.me/m/shoshomatcha?text=Hi%2C%20I%20want%20to%20order%20ICED%20AMERICANO"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Order Now
+        </a>
+      </article>
+
+    </section>
+  </main>
+
+  <footer class="footer">
+    Order through Instagram DM:
+
+    <a
+      href="https://ig.me/m/shoshomatcha"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      @shoshomatcha
+    </a>
+  </footer>
+
+</body>
+</html>
